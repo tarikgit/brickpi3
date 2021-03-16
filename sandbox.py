@@ -210,7 +210,7 @@ try:
     #    print((estimate_position(particleSet)))
     
         #straight(speed,distance)
-        straight(2,2)
+        straight(20,5)
 
 
 except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
