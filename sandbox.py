@@ -209,7 +209,7 @@ try:
     #    particleSet = go_to(particleSet,Wx,Wy)
     #    print((estimate_position(particleSet)))
     
-        straight(speed,distance):
+        straight(speed,distance)
 
 
 except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
