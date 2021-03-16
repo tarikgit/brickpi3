@@ -210,8 +210,8 @@ try:
     #    print((estimate_position(particleSet)))
     
         #straight(speed,distance)
-        #straight(-20,5)
-        BP.set_motor_dps(motor_l,20)
+        straight(1,5)
+        #BP.set_motor_dps(motor_l,20)
 
 except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()        # Unconfigure the sensors, disable the motors, and restore the LED to the control of the BrickPi3 fi
