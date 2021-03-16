@@ -32,7 +32,7 @@ OFFSET = 1.01
 deg_per_cm = 870/40.0
 deg_per_deg = 292/90.0
 # TBD    
-N = 100
+N = 1
 
 
 def particle_forward(position,distance):
