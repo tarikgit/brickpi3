@@ -210,7 +210,7 @@ try:
     #    print((estimate_position(particleSet)))
     
         #straight(speed,distance)
-        straight(1,5)
+        straight(100,1)
         #BP.set_motor_dps(motor_l,20)
 
 except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
