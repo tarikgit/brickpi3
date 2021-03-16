@@ -9,21 +9,30 @@ import time
 import numpy as np
 
 BP = brickpi3.BrickPi3()
-motor_r = BP.PORT_A
-motor_l = BP.PORT_D
-t_sensor = BP.PORT_3
-us_sensor = BP.PORT_4
-x_axis_bias = 150
-y_axis_bias = -80
-sigmaE=0
-sigmaF=0
-sigmaG=0
-x_scale = 5
-y_scale = -5
-OFFSET = 1.01
-deg_per_cm = 870/40.0
-deg_per_deg = 292/90.0
-N = 100
+
+# Define the right motor as connected to port MA and
+# the left motor as connected to port MD
+ motor_r = BP.PORT_A      
+ motor_l = BP.PORT_D
+# Define the two sensors
+ t_sensor = BP.PORT_3
+ us_sensor = BP.PORT_4
+# TBD
+ x_axis_bias = 150
+ y_axis_bias = -80
+# TBD
+ sigmaE=0
+ sigmaF=0
+ sigmaG=0
+# TBD    
+ x_scale = 5
+ y_scale = -5
+# TBD
+ OFFSET = 1.01
+ deg_per_cm = 870/40.0
+ deg_per_deg = 292/90.0
+# TBD    
+ N = 100
 
 
 def particle_forward(position,distance):
