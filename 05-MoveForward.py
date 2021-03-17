@@ -58,7 +58,8 @@ try:
 
         iter = iter + 1
         
-        except iter = 10
+        if iter == 10:
+            print("10 iterations reached")
     
     
 
