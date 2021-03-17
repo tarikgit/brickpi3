@@ -12,6 +12,8 @@ BP = brickpi3.BrickPi3()
 
 N = 1
 
+iter = 0
+
 # Define the right motor as connected to port MA and
 # the left motor as connected to port MD
 motor_r = BP.PORT_A      
@@ -54,6 +56,11 @@ try:
         distance = input('Please input distance: ')
         straight(speed,distance)
 
+        iter = iter + 1
+        
+        except iter = 10
+    
+    
 
 except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()        # Unconfigure the sensors, disable the motors, and restore the LED to the control of the BrickPi3 fi
