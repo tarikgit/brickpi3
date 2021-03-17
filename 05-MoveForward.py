@@ -19,6 +19,13 @@ def straight(speed,distance):
     while True:
         BP.set_motor_dps(motor_l,speed)
         BP.set_motor_dps(motor_r,speed)
+
+def initialise_ports():
+    reset_motor()
+    #BP.set_sensor_type(t_sensor, BP.SENSOR_TYPE.TOUCH)
+    #BP.set_sensor_type(us_sensor, BP.SENSOR_TYPE.TOUCH)
+    #BP.set_sensor_type(us_sensor, BP.SENSOR_TYPE.NXT_ULTRASONIC)
+        
         
 try:
     try:
@@ -26,8 +33,10 @@ try:
 
     except IOError as error:
         print(error) 
-
-
+    try:
+        target = BP.get_motor_encoder(motor_r) # read motor D's position
+    except IOError as error:
+        print(error)
         
 #Main:
     particleSet=[]
