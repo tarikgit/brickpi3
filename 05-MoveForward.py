@@ -25,7 +25,10 @@ def initialise_ports():
     #BP.set_sensor_type(t_sensor, BP.SENSOR_TYPE.TOUCH)
     #BP.set_sensor_type(us_sensor, BP.SENSOR_TYPE.TOUCH)
     #BP.set_sensor_type(us_sensor, BP.SENSOR_TYPE.NXT_ULTRASONIC)
-        
+     
+def reset_motor():
+    BP.offset_motor_encoder(motor_l, BP.get_motor_encoder(motor_l))
+    BP.offset_motor_encoder(motor_r, BP.get_motor_encoder(motor_r))        
         
 try:
     try:
