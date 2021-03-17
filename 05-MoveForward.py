@@ -10,6 +10,8 @@ import numpy as np
 
 BP = brickpi3.BrickPi3()
 
+N = 1
+
 # Define the right motor as connected to port MA and
 # the left motor as connected to port MD
 motor_r = BP.PORT_A      
