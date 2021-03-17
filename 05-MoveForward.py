@@ -20,6 +20,13 @@ def straight(speed,distance):
         BP.set_motor_dps(motor_l,speed)
         BP.set_motor_dps(motor_r,speed)
         
+try:
+    try:
+        initialise_ports()
+
+    except IOError as error:
+        print(error) 
+
 
         
 #Main:
